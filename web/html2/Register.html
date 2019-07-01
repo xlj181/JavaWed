@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form action="/JavaWed/RegisterServlet" method="get">
+    <input type="text" name="vCode"/><br/>
+    <img id="vCode" alt="图片" src="/JavaWed/VerifyCodeServlet" /><br/>
+    <a href="javascript:change();">看不清，换一张</a>
+    <input type="submit" value="提交">
+</form>
+</body>
+<script type="text/javascript">
+    function change() {
+        var vCode=document.getElementById("vCode");
+        vCode.ser="/JavaWed/VerifyCodeServlet?"+new Date().getDate();
+    }
+</script>
+</html>

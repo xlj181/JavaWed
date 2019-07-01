@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<>
+<form action="/JavaWed/PeopleAllServlet" method="get">
+    <a href="/JavaWed/PeopleAllServlet">查询所有</a>
+</form>
+
+
+
+<form action="/JavaWed/QueryPeopleByIdServlet" name="get">
+    id<input type="text" name="id"><br>
+    <input type="submit" value="查询"/>
+
+</form>
+<form action="/JavaWed/AddPeopleServlet" method="get">
+    <p>编号:<input type="text" name="id"/></p>
+    <p>姓名:<input type="text" name="name"/></p>
+    <p>性别:男<input type="radio" name="sex" value="男"/>
+        女<input type="radio" name="sex" value="女"/></p>
+    <p>年龄:<input type="text" name="age"/></p>
+    <p>地址:<input type="text" name="address"/></p>
+    <p>薪水:<input type="text" name="aslary"/></p>
+    <p>身份证:<input type="text" name="idcard"/></p>
+    <input type="submit" value="添加"/>
+</form>
+<form action="/JavaWed/UpdatePeopleServlet">
+    <p>编号:<input type="text" name="id"/><br></p>
+    <p>姓名:<input type="text" name="name"/><br></p>
+    <p>性别:<input type="text" name="sex"/><br></p>
+    <p>年龄:<input type="text" name="age"/><br></p>
+    <p>地址:<input type="text" name="address"/><br></p>
+    <p>薪水:<input type="text" name="aslary"/><br></p>
+    <p>身份证:<input type="text" name="idcard"/><br></p>
+    <input type="submit" value="修改"/>
+
+</form>
+
+<form action="/JavaWed/DeletePeopleServlet" name="get">
+    <input type="text" name="id">
+    <input type="submit" value="删除"/>
+</form>
+</body>
+</html>
